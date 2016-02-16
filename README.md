@@ -104,7 +104,7 @@ below is an example xml configuration file for regurgitator:
 		</rg:steps>
 		<rg:rules default-step="after-lunch">
 			<rg:rule step="before-lunch">
-				<rg:condition source="greeting" behaviour="equals" value="good morning"/>
+				<rg:condition source="greeting" equals="good morning"/>
 			</rg:rule>
 		</rg:rules>
 	</rg:decision>
