@@ -111,7 +111,7 @@ below is an example xml configuration file for regurgitator:
 </rg:regurgitator-configuration>
 ```
 
-below is example code for loading a regurgitator configuration file and creating a regurgitator instance:
+below is example code for loading a regurgitator configuration file, creating a regurgitator instance, and preparing and processing a message:
 
 ```java
 import com.emarte.regurgitator.core.*;
@@ -137,6 +137,8 @@ public class MyClass {
 	}
 }
 ```
+
+the response - output to the console - would, for the example above, be "it is before lunch"
 
 reference project
 -----------------
