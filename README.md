@@ -95,4 +95,4 @@ below is an example pom.xml for a maven project that includes regurgitator:
 reference project
 -----------------
 
-a reference starter project for using regurgitator can be found here: [rockpaperscissors](http://github.com/talmeym/rockpaperscissors)
+a reference project for using regurgitator can be found here: [rockpaperscissors](http://github.com/talmeym/rockpaperscissors)
