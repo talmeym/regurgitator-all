@@ -55,7 +55,7 @@ each of the above modules has a separate configuration module for each way in wh
 messages
 --------
 
-an incoming request is modelled as a ``message``, given to regurgitator for processing. A message may be pre-populated with relevant parameters, and provides a ``response-callback`` through which responses can be given. each parameter is stored in the message under a ``context``, which is a group of related parameters. the default context is simply 'parameters'. some more specific contexts (for [http](http://github.com/talmeym/regurgitator-extensions-web)) include 'request-headers', 'response-payload' and 'global-metadata'.
+an incoming request is modelled as a ``message``, given to regurgitator for processing. A message may be pre-populated with data, each data item being stored as a ``parameters``. each parameter is stored in the message under a ``context``, which is a group of related parameters. the default context is simply 'parameters'. some more specific contexts (for [http](http://github.com/talmeym/regurgitator-extensions-web)) include 'request-headers', 'response-payload' and 'global-metadata'. the message provides a ``response-callback`` through which responses can be given. 
 
 getting started
 ---------------
