@@ -102,7 +102,7 @@ below is an example xml configuration file for regurgitator:
 			<rg:create-response id="before-lunch" value="it is before lunch"/>
 			<rg:create-response id="after-lunch" value="it is after lunch"/>
 		</rg:steps>
-		<rg:rules defaultStep="after-lunch">
+		<rg:rules default-step="after-lunch">
 			<rg:rule step="before-lunch">
 				<rg:condition source="greeting" behaviour="equals" value="good morning"/>
 			</rg:rule>
@@ -116,12 +116,24 @@ below is example code for loading a regurgitator configuration file and creating
 ```java
 import com.emarte.regurgitator.core.*;
 
-public class MyClass {
-	private Regurgitator regurgitator;
+import static com.emarte.regurgitator.core.ConfigurationFile.loadFile;
 
-	public MyClass() {
-		Step rootStep = ConfigurationFile.loadFile("classpath:/my_configuration.xml");
-		regurgitator = new Regurgitator("my-regurgitator", rootStep);
+public class MyClass {
+	public static void main(String[] args) throws RegurgitatorException {
+		Step rootStep = loadFile("classpath:/my_configuration.xml");
+		Regurgitator regurgitator = new Regurgitator("my-regurgitator", rootStep);
+
+		ResponseCallBack callBack = new ResponseCallBack() {
+			@Override
+			public void respond(Message message, Object response) {
+				System.out.println(response);
+			}
+		};
+
+		Message message = new Message(callBack);
+		message.getParameters().setValue("greeting", "good afternoon");
+
+		regurgitator.processMessage(message);
 	}
 }
 ```
