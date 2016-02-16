@@ -92,6 +92,40 @@ below is an example pom.xml for a maven project that includes regurgitator:
 </project>
 ```
 
+below is an example xml configuration file for regurgitator:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<rg:regurgitator-configuration xmlns:rg="http://core.regurgitator.emarte.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://core.regurgitator.emarte.com regurgitatorCore.xsd">
+	<rg:decision id="check-greeting">
+		<rg:steps>
+			<rg:create-response id="before-lunch" value="it is before lunch"/>
+			<rg:create-response id="after-lunch" value="it is after lunch"/>
+		</rg:steps>
+		<rg:rules defaultStep="after-lunch">
+			<rg:rule step="before-lunch">
+				<rg:condition source="greeting" behaviour="equals" value="good morning"/>
+			</rg:rule>
+		</rg:rules>
+	</rg:decision>
+</rg:regurgitator-configuration>
+```
+
+below is example code for loading a regurgitator configuration file and creating a regurgitator instance:
+
+```java
+import com.emarte.regurgitator.core.*;
+
+public class MyClass {
+	private Regurgitator regurgitator;
+
+	public MyClass() {
+		Step rootStep = ConfigurationFile.loadFile("classpath:/my_configuration.xml");
+		regurgitator = new Regurgitator("my-regurgitator", rootStep);
+	}
+}
+```
+
 reference project
 -----------------
 
