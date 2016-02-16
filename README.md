@@ -131,7 +131,7 @@ public class MyClass {
 		};
 
 		Message message = new Message(callBack);
-		message.getParameters().setValue("greeting", "good afternoon");
+		message.getParameters().setValue("greeting", "good morning");
 
 		regurgitator.processMessage(message);
 	}
