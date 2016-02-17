@@ -116,11 +116,10 @@ below is example code for loading a configuration file, creating a regurgitator 
 ```java
 import com.emarte.regurgitator.core.*;
 
-import static com.emarte.regurgitator.core.ConfigurationFile.loadFile;
 
 public class MyClass {
 	public static void main(String[] args) throws RegurgitatorException {
-		Step rootStep = loadFile("classpath:/my_configuration.xml");
+		Step rootStep = ConfigurationFile.loadFile("classpath:/my_configuration.xml");
 		Regurgitator regurgitator = new Regurgitator("my-regurgitator", rootStep);
 
 		ResponseCallBack callBack = new ResponseCallBack() {
@@ -131,7 +130,7 @@ public class MyClass {
 		};
 
 		Message message = new Message(callBack);
-		message.getParameters().setValue("greeting", "good morning");
+		message.getParameters().setValue("greeting", "good afternoon");
 
 		regurgitator.processMessage(message);
 	}
