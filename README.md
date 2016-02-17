@@ -142,4 +142,4 @@ the response - output to the console - would, for the example above, be "it is b
 reference project
 -----------------
 
-a reference project for using regurgitator can be found here: [rockpaperscissors](http://github.com/talmeym/rockpaperscissors)
+reference project for using regurgitator can be found here: [rock-paper-scissors](http://github.com/talmeym/rock-paper-scissors) - mocks a servie that allows you to play a game
