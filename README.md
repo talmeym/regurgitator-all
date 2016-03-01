@@ -25,11 +25,6 @@ each of the above modules has a separate configuration module for each way in wh
 - [regurgitator-core-xml](https://github.com/talmeym/regurgitator-core-xml) allows configuration of core using a namespaced, schema validated xml document.
 - [regurgitator-extensions-json](https://github.com/talmeym/regurgitator-core-json) allows configuration of extensions using a json document.
 
-messages
---------
-
-an incoming request is modelled as a ``message``, given to regurgitator for processing. A message may be pre-populated with data, each data item being stored as a ``parameter``. each parameter is stored in the message under a ``context``, which holds a group of related parameters together. the default context is simply 'parameters'. some more specific contexts (for [http](http://github.com/talmeym/regurgitator-extensions-web)) include 'request-headers', 'response-payload' and 'global-metadata'. the message also provides a ``response-callback`` through which responses can be given. 
-
 getting started
 ---------------
 
