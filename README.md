@@ -2,7 +2,7 @@
 
 regurgitator is a modular, light-weight, extendable java-based processing framework designed to 'regurgitate' canned or clever responses to incoming requests.
 
-it provides a series of executable java [``steps``] (https://github.com/talmeym/regurgitator-core#steps) and [``constructs``] (https://github.com/talmeym/regurgitator-core#constructs) that can be combined or configured to apply simple or complex processing logic (as you require) when a request [``message``] (https://github.com/talmeym/regurgitator-core#messages) is received.
+it provides a series of executable [``steps``] (https://github.com/talmeym/regurgitator-core#steps) and [``constructs``] (https://github.com/talmeym/regurgitator-core#constructs) that can be combined or configured to apply simple or complex processing logic (as you require) when a request [``message``] (https://github.com/talmeym/regurgitator-core#messages) is received.
 you can also create your own steps, for whatever it doesn't do out of the box. 
 
 it can be configured using [``xml``](http://github.com/talmeym/regurgitator-core-xml) or [``json``](http://github.com/talmeym/regurgitator-core-json) files or extended to use any other document format.
