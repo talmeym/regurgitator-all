@@ -26,7 +26,7 @@ each of the above modules has a separate configuration module for each way in wh
 
 ## getting started
 
-### maven
+### example pom
 
 below is an example pom.xml for a maven project that includes regurgitator:
 
@@ -60,7 +60,7 @@ below is an example pom.xml for a maven project that includes regurgitator:
 </project>
 ```
 
-### configuration
+### example configuration
 
 below is an example xml configuration file for regurgitator:
 
@@ -81,7 +81,7 @@ below is an example xml configuration file for regurgitator:
 </rg:regurgitator-configuration>
 ```
 
-### java code
+### example code
 
 below is example code for loading a configuration file, creating a regurgitator instance, and processing a message:
 
@@ -111,6 +111,6 @@ public class MyClass {
 
 the response - output to the console - would, for the example above, be "it is before lunch"
 
-### reference project
+## reference project
 
 reference project for using regurgitator can be found here: [rock-paper-scissors](http://github.com/talmeym/rock-paper-scissors) - mocks a service allowing you to play a game
