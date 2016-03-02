@@ -1,4 +1,4 @@
-## regurgitator
+# regurgitator
 
 regurgitator is a modular, light-weight, extendable java-based processing framework designed to 'regurgitate' canned or clever responses to incoming requests.
 
@@ -11,7 +11,7 @@ it can work with [``http``](http://github.com/talmeym/regurgitator-extensions-we
 
 it is separated out into modules, so you only have to include the parts you need into your project, then configure it to do what you want, deploy it and go!
 
-### module structure
+## module structure
 
 the main modules are as follows:
 
@@ -24,7 +24,9 @@ each of the above modules has a separate configuration module for each way in wh
 - [regurgitator-core-xml](https://github.com/talmeym/regurgitator-core-xml) allows configuration of core using a namespaced, schema validated xml document.
 - [regurgitator-extensions-json](https://github.com/talmeym/regurgitator-core-json) allows configuration of extensions using a json document.
 
-### getting started
+## getting started
+
+### maven
 
 below is an example pom.xml for a maven project that includes regurgitator:
 
@@ -58,6 +60,8 @@ below is an example pom.xml for a maven project that includes regurgitator:
 </project>
 ```
 
+### configuration
+
 below is an example xml configuration file for regurgitator:
 
 ```xml
@@ -76,6 +80,8 @@ below is an example xml configuration file for regurgitator:
 	</rg:decision>
 </rg:regurgitator-configuration>
 ```
+
+### java code
 
 below is example code for loading a configuration file, creating a regurgitator instance, and processing a message:
 
