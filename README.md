@@ -15,14 +15,14 @@ it is separated out into modules, so you only have to include the parts you need
 
 the main modules are as follows:
 
-- [regurgitator-core](https://github.com/talmeym/regurgitator-core#regurgitator-core) provides the core steps and contructs to accept a request, process it and produce responses.
-- [regurgitator-extensions](https://github.com/talmeym/regurgitator-extensions#regurgitator-extensions) provides useful extension steps and construct implementations.
-- [regurgitator-extensions-web](https://github.com/talmeym/regurgitator-extensions-web#regurgitator-extensions-web) provides support for http, including the regurgitator servlet.
+- [regurgitator-core](https://github.com/talmeym/regurgitator-core#regurgitator-core) provides the core steps and contructs to accept a request, process it and produce responses
+- [regurgitator-extensions](https://github.com/talmeym/regurgitator-extensions#regurgitator-extensions) provides useful extension steps and construct implementations
+- [regurgitator-extensions-web](https://github.com/talmeym/regurgitator-extensions-web#regurgitator-extensions-web) provides support for http, including the regurgitator servlet
 
 each of the above modules has a separate configuration module for each way in which it can be configured, eg.
 
-- [regurgitator-core-xml](https://github.com/talmeym/regurgitator-core-xml) allows configuration of core using a namespaced, schema validated xml document.
-- [regurgitator-extensions-json](https://github.com/talmeym/regurgitator-core-json) allows configuration of extensions using a json document.
+- [regurgitator-core-xml](https://github.com/talmeym/regurgitator-core-xml) allows configuration of core using a namespaced, schema validated xml document
+- [regurgitator-extensions-json](https://github.com/talmeym/regurgitator-core-json) allows configuration of extensions using a json document
 
 ## getting started
 
