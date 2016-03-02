@@ -88,7 +88,6 @@ below is example code for loading a configuration file, creating a regurgitator 
 ```java
 import com.emarte.regurgitator.core.*;
 
-
 public class MyClass {
 	public static void main(String[] args) throws RegurgitatorException {
 		Step rootStep = ConfigurationFile.loadFile("classpath:/my_configuration.xml");
