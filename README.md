@@ -109,7 +109,7 @@ public class MyClass {
 }
 ```
 
-the response - output to the console - would, for the example above, be "it is before lunch"
+the response - output to the console - would for the example above be "it is before lunch"
 
 ## reference project
 
