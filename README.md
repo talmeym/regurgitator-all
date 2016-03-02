@@ -11,7 +11,9 @@ it can work with [``http``](http://github.com/talmeym/regurgitator-extensions-we
 
 it is separated out into modules, so you only have to include the parts you need into your project, then configure it to do what you want, deploy it and go!
 
-### modules structure
+### module structure
+
+some important modules:
 
 - [regurgitator-core](https://github.com/talmeym/regurgitator-core) provides the core steps and contructs to accept a request, process it and produce responses.
 - [regurgitator-extensions](https://github.com/talmeym/regurgitator-extensions) provides useful extension steps and construct implementations.
