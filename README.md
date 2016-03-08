@@ -11,7 +11,7 @@ it can work with [``http``](https://github.com/talmeym/regurgitator-extensions-w
 
 it is separated out into modules, so you only have to include the parts you need into your project, then configure it to do what you want, deploy it and go!
 
-click on the highlighted [``terms``](https://github.com/talmeym/regurgitator-all#regurgitator) above to learn more.
+click on the highlighted [``terms``](https://github.com/talmeym/regurgitator-all#regurgitator) above to learn more, or see the reference projects [here](https://github.com/talmeym/regurgitator-all#reference-projects).
 
 ## module structure
 
@@ -112,7 +112,7 @@ public class MyClass {
 
 the response, for the noddy example above, would be "it is after lunch", output to the console.
 
-## reference project
+## reference projects
 
 reference projects for using regurgitator can be found here: 
 - [rock-paper-scissors](http://github.com/talmeym/rock-paper-scissors) - mocks a service allowing you to play a famous game
