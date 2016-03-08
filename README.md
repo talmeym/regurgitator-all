@@ -110,8 +110,9 @@ public class MyClass {
 }
 ```
 
-the response, for the noddy example, would  above be "it is after lunch", output to the console.
+the response, for the noddy example above, would be "it is after lunch", output to the console.
 
 ## reference project
 
-a reference project for using regurgitator can be found here: [rock-paper-scissors](http://github.com/talmeym/rock-paper-scissors) - mocks a service allowing you to play a game
+reference projects for using regurgitator can be found here: [rock-paper-scissors](http://github.com/talmeym/rock-paper-scissors) - mocks a service allowing you to play a game
+[primeable-mock-server](https://github.com/talmeym/primeable-mock-server) - a mock server you can prime for any http call
