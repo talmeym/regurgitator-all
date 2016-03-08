@@ -110,7 +110,7 @@ public class MyClass {
 }
 ```
 
-the response - output to the console - would for the noddy example above be "it is after lunch"
+the response, for the noddy example, would  above be "it is after lunch", output to the console.
 
 ## reference project
 
