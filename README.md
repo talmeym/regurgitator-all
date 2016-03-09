@@ -62,7 +62,7 @@ below is an example pom.xml for a maven project that includes regurgitator:
 </project>
 ```
 
-### example configuration
+### example xml configuration
 
 below is an example xml configuration file for regurgitator:
 
@@ -81,6 +81,41 @@ below is an example xml configuration file for regurgitator:
 		</rg:rules>
 	</rg:decision>
 </rg:regurgitator-configuration>
+```
+
+### example json configuration
+
+below is an example json configuration file for regurgitator:
+
+```json
+{
+    "kind": "decision",
+    "id": "check-greeting",
+    "steps": [
+        {
+            "kind": "create-response",
+            "id": "before-lunch",
+            "value": "it is before lunch"
+        },
+        {
+            "kind": "create-response",
+            "id": "after-lunch",
+            "value": "it is after lunch"
+        }
+    ],
+    "default-step": "after-lunch",
+    "rules": [
+        {
+            "step": "before-lunch",
+            "conditions": [
+                {
+                    "source": "greeting",
+                    "equals": "good morning"
+                }
+            ]
+        }
+    ]
+}
 ```
 
 ### example code
