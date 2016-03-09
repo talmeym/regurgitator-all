@@ -83,8 +83,6 @@ below is an example xml configuration file for regurgitator:
 </rg:regurgitator-configuration>
 ```
 
-### example json configuration
-
 below is an example json configuration file for regurgitator:
 
 ```json
