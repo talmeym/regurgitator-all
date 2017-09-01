@@ -16,6 +16,13 @@
        		<github.global.server>github</github.global.server>
    	</properties>
 
+	<repositories>
+		<repository>
+			<id>regurgitator-mvn-repo</id>
+			<url>https://raw.github.com/talmeym/regurgitator-binaries/mvn-repo/</url>
+		</repository>
+	</repositories>
+
    	<distributionManagement>
    		<repository>
    			<id>internal.repo</id>
