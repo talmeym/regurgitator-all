@@ -76,6 +76,11 @@
             <artifactId>regurgitator-extensions-json</artifactId>
             <version>0.0.1</version>
         </dependency>
+        <dependency>
+            <groupId>com.emarte.regurgitator</groupId>
+            <artifactId>regurgitator-extensions-yml</artifactId>
+            <version>0.0.1</version>
+        </dependency>
 		<dependency>
             <groupId>com.emarte.regurgitator</groupId>
             <artifactId>regurgitator-extensions-web-xml</artifactId>
@@ -86,6 +91,11 @@
             <artifactId>regurgitator-extensions-web-json</artifactId>
             <version>0.0.1</version>
         </dependency>
+        <dependency>
+            <groupId>com.emarte.regurgitator</groupId>
+            <artifactId>regurgitator-extensions-web-yml</artifactId>
+            <version>0.0.1</version>
+        </dependency>
 		<dependency>
             <groupId>com.emarte.regurgitator</groupId>
             <artifactId>regurgitator-extensions-mq-xml</artifactId>
@@ -94,6 +104,11 @@
         <dependency>
             <groupId>com.emarte.regurgitator</groupId>
             <artifactId>regurgitator-extensions-mq-json</artifactId>
+            <version>0.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.emarte.regurgitator</groupId>
+            <artifactId>regurgitator-extensions-mq-yml</artifactId>
             <version>0.0.1</version>
         </dependency>
     </dependencies>
