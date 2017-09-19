@@ -119,6 +119,28 @@ below is an example json configuration file for regurgitator:
 }
 ```
 
+### example yml configuration
+
+below is an example yml configuration file for regurgitator:
+
+```yml
+decision:
+ id: check-greeting
+ steps:
+ - create-response:
+    id: before-lunch
+    value: it is before lunch
+ - create-response:
+    id: after-lunch
+    value: it is after lunch
+ default-step: after-lunch
+ rules:
+ - step: before-lunch
+   conditions:
+   - source: greeting
+     equals: good morning
+```
+
 ### example code
 
 below is example code for loading a configuration file, creating a regurgitator instance, and processing a message:
