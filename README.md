@@ -168,9 +168,9 @@ public class MyClass {
 }
 ```
 
-the response, for the noddy example above, would be "it is after lunch", output to the console.
+the response, for this noddy example, would be "it is after lunch", output to the console.
 
-(this example has shown programmic use of [regurgitator-core](https://github.com/talmeym/regurgitator-core). to see how regurgitator can help you over http or mq, see here: [web](https://github.com/talmeym/regurgitator-extensions-web) [mq](https://github.com/talmeym/regurgitator-extensions-mq) or follow links below to some reference projects)
+(the above example shows programmic use of [regurgitator-core](https://github.com/talmeym/regurgitator-core). to see how regurgitator can help you over http or mq, see here: [web](https://github.com/talmeym/regurgitator-extensions-web) [mq](https://github.com/talmeym/regurgitator-extensions-mq) or follow links below to some reference projects)
 
 ## reference projects
 
