@@ -77,7 +77,7 @@ below is an example xml configuration file for regurgitator:
 		</rg:steps>
 		<rg:rules default-step="after-lunch">
 			<rg:rule step="before-lunch">
-				<rg:condition source="greeting" equals="good morning"/>
+				<rg:condition source="greeting" contains="morning"/>
 			</rg:rule>
 		</rg:rules>
 	</rg:decision>
@@ -111,7 +111,7 @@ below is an example json configuration file for regurgitator:
             "conditions": [
                 {
                     "source": "greeting",
-                    "equals": "good morning"
+                    "contains": "morning"
                 }
             ]
         }
@@ -138,7 +138,7 @@ decision:
  - step: before-lunch
    conditions:
    - source: greeting
-     equals: good morning
+     contains: morning
 ```
 
 ### example code
