@@ -24,7 +24,7 @@ the main modules are as follows:
 each of the above modules has a separate configuration module for each way in which it can be configured, eg.
 
 - [regurgitator-core-xml](https://github.com/talmeym/regurgitator-core-xml) allows configuration of core using a namespaced, schema validated xml document
-- [regurgitator-extensions-json](https://github.com/talmeym/regurgitator-core-json) allows configuration of extensions using a json document
+- [regurgitator-extensions-web-json](https://github.com/talmeym/regurgitator-core-web-json) allows configuration of web extensions using a json document
 - [regurgitator-extensions-mq-yml](https://github.com/talmeym/regurgitator-extensions-mq-yml) allows configuration of mq extensions using a yml document
 
 ## getting started
