@@ -174,6 +174,6 @@ the response, for this noddy example, would be "it is after lunch", output to th
 
 ## reference projects
 
-reference projects for using regurgitator can be found here: 
+reference projects for using regurgitator (over http) can be found below: 
 - [rock-paper-scissors](http://github.com/talmeym/rock-paper-scissors) - mocks a service allowing you to play a famous game
 - [primeable-mock-server](https://github.com/talmeym/primeable-mock-server) - a mock server you can prime for any http call
