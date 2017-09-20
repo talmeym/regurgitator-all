@@ -170,7 +170,7 @@ public class MyClass {
 
 the response, for this noddy example, would be "it is after lunch", output to the console.
 
-(the above example shows programmic use of [regurgitator-core](https://github.com/talmeym/regurgitator-core#regurgitator-core). to see how regurgitator can help you over http or mq, see [web](https://github.com/talmeym/regurgitator-extensions-web#regurgitator-extensions-web) or [mq](https://github.com/talmeym/regurgitator-extensions-mq#regurgitator-extensions-mq) or follow links below to some reference projects)
+(the above example shows programmic use of [regurgitator-core](https://github.com/talmeym/regurgitator-core#regurgitator-core). to see how regurgitator can help you over http or mq, with or without writing code, see [web](https://github.com/talmeym/regurgitator-extensions-web#regurgitator-extensions-web) or [mq](https://github.com/talmeym/regurgitator-extensions-mq#regurgitator-extensions-mq) or follow links below to some reference projects)
 
 ## reference projects
 
