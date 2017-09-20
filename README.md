@@ -4,7 +4,7 @@ regurgitator is a lightweight, modular, extendable java framework that you confi
 
 it provides a series of executable [``steps``](https://github.com/talmeym/regurgitator-core#steps) and [``constructs``](https://github.com/talmeym/regurgitator-core#constructs) that you combine / configure to apply simple or complex processing logic (as required) when a request [``message``](https://github.com/talmeym/regurgitator-core#messages) is received. you can also create your own steps and constructs, for whatever it doesn't do out of the box. 
 
-it can be configured using [``xml``](http://github.com/talmeym/regurgitator-core-xml#xml-configuration-of-regurgitator) or [``json``](http://github.com/talmeym/regurgitator-core-json#json-configuration-of-regurgitator) or [``yml``](http://github.com/talmeym/regurgitator-core-yml#yml-configuration-of-regurgitator)  files (or extended to use any other document format), allowing mocked logic to be provided without writing any code - simply configure the behaviour you want!
+it can be configured using [``xml``](http://github.com/talmeym/regurgitator-core-xml#xml-configuration-of-regurgitator), [``json``](http://github.com/talmeym/regurgitator-core-json#json-configuration-of-regurgitator) or [``yml``](http://github.com/talmeym/regurgitator-core-yml#yml-configuration-of-regurgitator)  files (or extended to use any other document format), allowing mocked logic to be provided without writing any code - simply configure the behaviour you want!
 
 it can work with [``http``](https://github.com/talmeym/regurgitator-extensions-web#regurgitator-over-http) to mock/stub http services, [``mq``](https://github.com/talmeym/regurgitator-extensions-mq#regurgitator-over-mq), or can be embedded within any other request / response mechanism.
 
