@@ -21,7 +21,7 @@ the main modules are as follows:
 - [regurgitator-extensions-web](https://github.com/talmeym/regurgitator-extensions-web#regurgitator-extensions-web) provides support for http, including the regurgitator servlet
 - [regurgitator-extensions-mq](https://github.com/talmeym/regurgitator-extensions-mq#regurgitator-extensions-mq) provides support for mocking services reached over mq
 
-each of the above modules has a separate configuration module for each way in which it can be configured, eg.
+each of the above has an accompanying configuration module for each document type from which it can be configured, eg.
 
 - [regurgitator-core-xml](https://github.com/talmeym/regurgitator-core-xml) allows configuration of core using a namespaced, schema validated xml document
 - [regurgitator-extensions-web-json](https://github.com/talmeym/regurgitator-core-web-json) allows configuration of web extensions using a json document
