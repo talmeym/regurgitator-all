@@ -43,7 +43,7 @@ below is an example pom.xml for a maven project that includes regurgitator:
     <groupId>my.group.id</groupId>
     <artifactId>my-artifact</artifactId>
     <version>0.0.1</version>
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
     <name>My Artifact</name>
 
     <repositories>
