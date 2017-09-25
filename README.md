@@ -1,6 +1,6 @@
 # regurgitator
 
-regurgitator is a lightweight, modular, extendable java framework that you configure to 'regurgitate' canned or clever responses to incoming requests; useful for quickly mocking or prototyping services without writing any code.
+regurgitator is a lightweight, modular, extendable java framework that you configure to "regurgitate" canned or clever responses to incoming requests; useful for quickly mocking or prototyping services without writing any code.
 
 it provides a series of executable [``steps``](https://github.com/talmeym/regurgitator-core#steps) and [``constructs``](https://github.com/talmeym/regurgitator-core#constructs) that you combine / configure to apply simple or complex processing logic (as required) when a request [``message``](https://github.com/talmeym/regurgitator-core#messages) is received. you can also create your own steps and constructs, for whatever it doesn't do out of the box. 
 
