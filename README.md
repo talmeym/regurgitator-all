@@ -70,17 +70,17 @@ below is an example xml configuration file for regurgitator:
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <rg:regurgitator-configuration xmlns:rg="http://core.regurgitator.emarte.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://core.regurgitator.emarte.com regurgitatorCore.xsd">
-	<rg:decision id="check-greeting">
-		<rg:steps>
-			<rg:create-response id="before-lunch" value="it is before lunch"/>
-			<rg:create-response id="after-lunch" value="it is after lunch"/>
-		</rg:steps>
-		<rg:rules default-step="after-lunch">
-			<rg:rule step="before-lunch">
-				<rg:condition source="greeting" contains="morning"/>
-			</rg:rule>
-		</rg:rules>
-	</rg:decision>
+    <rg:decision id="check-greeting">
+        <rg:steps>
+            <rg:create-response id="before-lunch" value="it is before lunch"/>
+            <rg:create-response id="after-lunch" value="it is after lunch"/>
+        </rg:steps>
+        <rg:rules default-step="after-lunch">
+            <rg:rule step="before-lunch">
+                <rg:condition source="greeting" contains="morning"/>
+            </rg:rule>
+        </rg:rules>
+    </rg:decision>
 </rg:regurgitator-configuration>
 ```
 
@@ -149,22 +149,22 @@ below is example code for loading a configuration file, creating a regurgitator 
 import com.emarte.regurgitator.core.*;
 
 public class MyClass {
-	public static void main(String[] args) throws RegurgitatorException {
-		Step rootStep = ConfigurationFile.loadFile("classpath:/my_configuration.xml");
-		Regurgitator regurgitator = new Regurgitator("my-regurgitator", rootStep);
+    public static void main(String[] args) throws RegurgitatorException {
+        Step rootStep = ConfigurationFile.loadFile("classpath:/my_configuration.xml");
+        Regurgitator regurgitator = new Regurgitator("my-regurgitator", rootStep);
 
-		ResponseCallBack callBack = new ResponseCallBack() {
-			@Override
-			public void respond(Message message, Object response) {
-				System.out.println(response);
-			}
-		};
+        ResponseCallBack callBack = new ResponseCallBack() {
+            @Override
+            public void respond(Message message, Object response) {
+                System.out.println(response);
+            }
+        };
 
-		Message message = new Message(callBack);
-		message.getParameters().setValue("greeting", "good afternoon");
+        Message message = new Message(callBack);
+        message.getParameters().setValue("greeting", "good afternoon");
 
-		regurgitator.processMessage(message);
-	}
+        regurgitator.processMessage(message);
+    }
 }
 ```
 
