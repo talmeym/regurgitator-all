@@ -177,3 +177,9 @@ the response, for this noddy example, would be "it is after lunch", output to th
 reference projects for using regurgitator (over http) can be found below: 
 - [rock-paper-scissors](http://github.com/talmeym/rock-paper-scissors) - mocks a service allowing you to play a famous game
 - [primeable-mock-server](https://github.com/talmeym/primeable-mock-server) - a mock server you can prime for any http call
+
+```
+Copyright (C) 2017 Miles Talmey.
+Regurgitator is distributed under the MIT License (license terms are at http://opensource.org/licenses/MIT).
+```
+
