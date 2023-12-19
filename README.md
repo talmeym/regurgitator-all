@@ -153,12 +153,7 @@ public class MyClass {
         Step rootStep = ConfigurationFile.loadFile("classpath:/my_configuration.xml");
         Regurgitator regurgitator = new Regurgitator("my-regurgitator", rootStep);
 
-        ResponseCallBack callBack = new ResponseCallBack() {
-            @Override
-            public void respond(Message message, Object response) {
-                System.out.println(response);
-            }
-        };
+        ResponseCallBack callBack = (message,response)-> System.out.println(response);
 
         Message message = new Message(callBack);
         message.getParameters().setValue("greeting", "good afternoon");
