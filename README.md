@@ -55,7 +55,7 @@ below is an example pom.xml for a maven project that includes regurgitator:
 
     <dependencies>
         <dependency>
-            <groupId>com.emarte.regurgitator</groupId>
+            <groupId>uk.emarte.regurgitator</groupId>
             <artifactId>regurgitator-all</artifactId>
             <version>0.0.1</version>
         </dependency>
@@ -146,7 +146,7 @@ decision:
 below is example code for loading a configuration file, creating a regurgitator instance, and processing a message:
 
 ```java
-import com.emarte.regurgitator.core.*;
+import uk.emarte.regurgitator.core.*;
 
 public class MyClass {
     public static void main(String[] args) throws RegurgitatorException {
