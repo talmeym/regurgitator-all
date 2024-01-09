@@ -69,7 +69,7 @@ below is an example xml configuration file for regurgitator:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<rg:regurgitator-configuration xmlns:rg="http://core.regurgitator.emarte.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://core.regurgitator.emarte.com regurgitatorCore.xsd">
+<rg:regurgitator-configuration xmlns:rg="http://core.regurgitator.emarte.uk" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://core.regurgitator.emarte.uk regurgitatorCore.xsd">
     <rg:decision id="check-greeting">
         <rg:steps>
             <rg:create-response id="before-lunch" value="it is before lunch"/>
