@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.emarte.regurgitator</groupId>
+    <groupId>uk.emarte.regurgitator</groupId>
     <artifactId>regurgitator-all</artifactId>
     <version>0.0.1</version>
     <packaging>jar</packaging>
@@ -71,52 +71,52 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.emarte.regurgitator</groupId>
+            <groupId>uk.emarte.regurgitator</groupId>
             <artifactId>regurgitator-extensions-xml</artifactId>
             <version>0.0.1</version>
         </dependency>
         <dependency>
-            <groupId>com.emarte.regurgitator</groupId>
+            <groupId>uk.emarte.regurgitator</groupId>
             <artifactId>regurgitator-extensions-json</artifactId>
             <version>0.0.1</version>
         </dependency>
         <dependency>
-            <groupId>com.emarte.regurgitator</groupId>
+            <groupId>uk.emarte.regurgitator</groupId>
             <artifactId>regurgitator-extensions-yml</artifactId>
             <version>0.0.1</version>
         </dependency>
         <dependency>
-            <groupId>com.emarte.regurgitator</groupId>
+            <groupId>uk.emarte.regurgitator</groupId>
             <artifactId>regurgitator-extensions-web-xml</artifactId>
             <version>0.0.1</version>
         </dependency>
         <dependency>
-            <groupId>com.emarte.regurgitator</groupId>
+            <groupId>uk.emarte.regurgitator</groupId>
             <artifactId>regurgitator-extensions-web-json</artifactId>
             <version>0.0.1</version>
         </dependency>
         <dependency>
-            <groupId>com.emarte.regurgitator</groupId>
+            <groupId>uk.emarte.regurgitator</groupId>
             <artifactId>regurgitator-extensions-web-yml</artifactId>
             <version>0.0.1</version>
         </dependency>
         <dependency>
-            <groupId>com.emarte.regurgitator</groupId>
+            <groupId>uk.emarte.regurgitator</groupId>
             <artifactId>regurgitator-extensions-jetty</artifactId>
             <version>0.0.1</version>
         </dependency>
         <dependency>
-            <groupId>com.emarte.regurgitator</groupId>
+            <groupId>uk.emarte.regurgitator</groupId>
             <artifactId>regurgitator-extensions-mq-xml</artifactId>
             <version>0.0.1</version>
         </dependency>
         <dependency>
-            <groupId>com.emarte.regurgitator</groupId>
+            <groupId>uk.emarte.regurgitator</groupId>
             <artifactId>regurgitator-extensions-mq-json</artifactId>
             <version>0.0.1</version>
         </dependency>
         <dependency>
-            <groupId>com.emarte.regurgitator</groupId>
+            <groupId>uk.emarte.regurgitator</groupId>
             <artifactId>regurgitator-extensions-mq-yml</artifactId>
             <version>0.0.1</version>
         </dependency>
