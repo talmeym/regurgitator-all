@@ -4,7 +4,7 @@ regurgitator is a lightweight, modular, extendable java framework that you confi
 
 it provides a series of executable [``steps``](https://talmeym.github.io/regurgitator-core#steps) and [``constructs``](https://talmeym.github.io/regurgitator-core#constructs) that you combine / configure to apply simple or complex processing logic (as required) when a request [``message``](https://talmeym.github.io/regurgitator-core#messages) is received. you can also create your own steps and constructs, for whatever it doesn't do out of the box. 
 
-it can be configured using [``xml``](http://github.com/talmeym/regurgitator-core-xml#xml-configuration-of-regurgitator), [``json``](http://github.com/talmeym/regurgitator-core-json#json-configuration-of-regurgitator) or [``yml``](http://github.com/talmeym/regurgitator-core-yml#yml-configuration-of-regurgitator)  files (or extended to use any other document format), allowing mocked logic to be provided without writing any code - simply configure the behaviour you want!
+it can be configured using [``xml``](https://talmeym.github.io/regurgitator-core-xml#xml-configuration-of-regurgitator), [``json``](https://talmeym.github.io/regurgitator-core-json#json-configuration-of-regurgitator) or [``yml``](https://talmeym.github.io/regurgitator-core-yml#yml-configuration-of-regurgitator)  files (or extended to use any other document format), allowing mocked logic to be provided without writing any code - simply configure the behaviour you want!
 
 it can work with [``http``](https://talmeym.github.io/regurgitator-extensions-web#regurgitator-over-http) to mock/stub http services, can work with [``mq``](https://talmeym.github.io/regurgitator-extensions-mq#regurgitator-over-mq), or can be embedded within any other request / response mechanism.
 
@@ -170,5 +170,5 @@ the response, for this noddy example, would be "it is after lunch", output to th
 ## reference projects
 
 reference projects for using regurgitator (over http) can be found below: 
-- [rock-paper-scissors](http://github.com/talmeym/rock-paper-scissors) - mocks a service allowing you to play a famous game
+- [rock-paper-scissors](https://talmeym.github.io/rock-paper-scissors) - mocks a service allowing you to play a famous game
 - [primeable-mock-server](https://talmeym.github.io/primeable-mock-server) - a mock server you can prime for any http call
