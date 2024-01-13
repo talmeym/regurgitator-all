@@ -16,12 +16,12 @@ click on the highlighted [``terms``](https://talmeym.github.io/regurgitator-all#
 
 the main modules are as follows:
 
-- [regurgitator-core](https://talmeym.github.io/regurgitator-core#regurgitator-core) provides the core steps and contructs to accept a request, process it and produce responses
+- [regurgitator-core](https://talmeym.github.io/regurgitator-core#regurgitator-core) provides the core steps and constructs to accept a request, process it and produce responses
 - [regurgitator-extensions](https://talmeym.github.io/regurgitator-extensions#regurgitator-extensions) provides useful extension steps and construct implementations
 - [regurgitator-extensions-web](https://talmeym.github.io/regurgitator-extensions-web#regurgitator-extensions-web) provides support for http, including the regurgitator servlet
 - [regurgitator-extensions-mq](https://talmeym.github.io/regurgitator-extensions-mq#regurgitator-extensions-mq) provides support for mocking services reached over mq
 
-each of the above has an accompanying module for each document type from which it can be configured, eg.
+each of the above has an accompanying module for each document type from which it can be configured, e.g.
 
 - [regurgitator-core-xml](https://talmeym.github.io/regurgitator-core-xml) allows configuration of core using a namespaced, schema validated xml document
 - [regurgitator-extensions-web-json](https://talmeym.github.io/regurgitator-core-web-json) allows configuration of web extensions using a json document
@@ -153,12 +153,7 @@ public class MyClass {
         Step rootStep = ConfigurationFile.loadFile("classpath:/my_configuration.xml");
         Regurgitator regurgitator = new Regurgitator("my-regurgitator", rootStep);
 
-        ResponseCallBack callBack = new ResponseCallBack() {
-            @Override
-            public void respond(Message message, Object response) {
-                System.out.println(response);
-            }
-        };
+        ResponseCallBack callBack = (message,response)-> System.out.println(response);
 
         Message message = new Message(callBack);
         message.getParameters().setValue("greeting", "good afternoon");
@@ -170,10 +165,10 @@ public class MyClass {
 
 the response, for this noddy example, would be "it is after lunch", output to the console.
 
-(the above example shows programmic use of [regurgitator-core](https://talmeym.github.io/regurgitator-core#regurgitator-core). to see how regurgitator can help you over http or mq, with or without writing code, see [web](https://talmeym.github.io/regurgitator-extensions-web#regurgitator-extensions-web) or [mq](https://talmeym.github.io/regurgitator-extensions-mq#regurgitator-extensions-mq) or follow links below to some reference projects)
+(the above example shows programmatic use of [regurgitator-core](https://talmeym.github.io/regurgitator-core#regurgitator-core). to see how regurgitator can help you over http or mq, with or without writing code, see [web](https://talmeym.github.io/regurgitator-extensions-web#regurgitator-extensions-web) or [mq](https://talmeym.github.io/regurgitator-extensions-mq#regurgitator-extensions-mq) or follow links below to some reference projects)
 
 ## reference projects
 
 reference projects for using regurgitator (over http) can be found below: 
-- [rock-paper-scissors](http://github.com/talmeym/rock-paper-scissors) - mocks a service allowing you to play a famous game
-- [primeable-mock-server](http://github.com/talmeym/primeable-mock-server) - a mock server you can prime for any http call
+- [rock-paper-scissors](https://github.com/talmeym/rock-paper-scissors) - mocks a service allowing you to play a famous game
+- [primeable-mock-server](https://github.com/talmeym/primeable-mock-server) - a mock server you can prime for any http call
