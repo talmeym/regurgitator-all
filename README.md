@@ -46,18 +46,11 @@ below is an example pom.xml for a maven project that includes regurgitator:
     <packaging>war</packaging>
     <name>My Artifact</name>
 
-    <repositories>
-        <repository>
-            <id>regurgitator-mvn-repo</id>
-            <url>https://raw.github.com/talmeym/regurgitator-binaries/mvn-repo/</url>
-        </repository>
-    </repositories>
-
     <dependencies>
         <dependency>
             <groupId>uk.emarte.regurgitator</groupId>
             <artifactId>regurgitator-all</artifactId>
-            <version>0.0.1</version>
+            <version>0.1.1</version>
         </dependency>
     </dependencies>
 </project>
