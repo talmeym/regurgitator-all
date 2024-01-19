@@ -6,7 +6,7 @@ it provides a series of executable [``steps``](https://talmeym.github.io/regurgi
 
 it can be configured using [``xml``](https://talmeym.github.io/regurgitator-core-xml#xml-configuration-of-regurgitator), [``json``](https://talmeym.github.io/regurgitator-core-json#json-configuration-of-regurgitator) or [``yml``](https://talmeym.github.io/regurgitator-core-yml#yml-configuration-of-regurgitator)  files (or extended to use any other document format), allowing mocked logic to be created without writing any code - simply configure the behaviour you want!
 
-it can work with [``http``](https://talmeym.github.io/regurgitator-extensions-web#regurgitator-over-http) to mock/stub http services, can work with [``mq``](https://talmeym.github.io/regurgitator-extensions-mq#regurgitator-over-mq) to mock jms services, or can be embedded within any other request / response mechanism.
+it can work with [``http``](https://talmeym.github.io/regurgitator-extensions-web#regurgitator-over-http) to mock/stub http services, can work with [``mq``](https://talmeym.github.io/regurgitator-extensions-mq#regurgitator-over-mq) to mock jms services, or can be embedded within any other request / response mechanism. It can work with jetty to produce dockerized deployables that you can make part of your testing strategy.
 
 it is separated out into modules, so you only have to include the parts you need into your project, then configure it to do what you want, deploy it and go!
 
