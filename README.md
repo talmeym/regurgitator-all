@@ -127,5 +127,5 @@ the output for this example would be ```"The result was player wins"```.
 ## reference projects
 
 reference projects for using regurgitator (over http) can be found below: 
-- [rock-paper-scissors](https://github.com/talmeym/rock-paper-scissors){:target="_blank"}  - mocks a service allowing you to play rock paper scissors over http
+- [rock-paper-scissors](https://github.com/talmeym/rock-paper-scissors){:target="_blank"}  - mocks a service allowing you to play the famous game
 - [primeable-mock-server](https://github.com/talmeym/primeable-mock-server){:target="_blank"}  - a mock server you can prime for any http call
