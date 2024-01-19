@@ -8,7 +8,7 @@ it can be configured using [``xml``](https://talmeym.github.io/regurgitator-core
 
 it can work with [``http``](https://talmeym.github.io/regurgitator-extensions-web#regurgitator-over-http) to mock/stub http services, can work with [``mq``](https://talmeym.github.io/regurgitator-extensions-mq#regurgitator-over-mq) to mock jms services, or can be embedded within any other request / response mechanism. 
 
-it can work with [``jetty``](https://talmeym.github.io/regurgitator-extensions-web#jetty) to be included in dockerized deployables that you can stand up alongside your own, allowing you to test interactions with components that may not exist yet.
+it can work with [``jetty``](https://talmeym.github.io/regurgitator-extensions-web#jetty) to be packaged as a containerized deployable that you can stand up alongside your own, allowing you to test interactions with components that may not exist yet.
 
 it is separated out into modules, so you only have to include the parts you need into your project, then configure it to do what you want, deploy it and go!
 
