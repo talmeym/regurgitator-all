@@ -87,21 +87,15 @@ below is an example json configuration file for regurgitator:
 {
     "kind": "decision", "id": "check-greeting",
     "steps": [
-        {
-            "kind": "create-response", "id": "before-lunch", "value": "it is before lunch"
-        },
-        {
-            "kind": "create-response", "id": "after-lunch", "value": "it is after lunch"
-        }
+        { "kind": "create-response", "id": "before-lunch", "value": "it is before lunch" },
+        { "kind": "create-response", "id": "after-lunch", "value": "it is after lunch" }
     ],
     "default-step": "after-lunch",
     "rules": [
         {
             "step": "before-lunch",
             "conditions": [
-                {
-                    "source": "greeting", "contains": "morning"
-                }
+                { "source": "greeting", "contains": "morning" }
             ]
         }
     ]
