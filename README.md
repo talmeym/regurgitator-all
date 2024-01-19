@@ -45,8 +45,7 @@ below is an example pom.xml for a maven project that includes regurgitator:
     <groupId>my.group.id</groupId>
     <artifactId>my-artifact</artifactId>
     <version>0.0.1</version>
-    <packaging>war</packaging>
-    <name>My Artifact</name>
+    <name>My Regurgitator Example</name>
 
     <dependencies>
         <dependency>
@@ -64,106 +63,69 @@ below is an example xml configuration file for regurgitator:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<rg:regurgitator-configuration xmlns:rg="http://core.regurgitator.emarte.uk" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://core.regurgitator.emarte.uk regurgitatorCore.xsd">
-    <rg:decision id="check-greeting">
+<rg:regurgitator-configuration xmlns:rg="http://core.regurgitator.emarte.uk" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://core.regurgitator.emarte.uk regurgitatorCore.xsd" id="rock-paper-scissors">
+    <rg:decision id="determine-result">
         <rg:steps>
-            <rg:create-response id="before-lunch" value="it is before lunch"/>
-            <rg:create-response id="after-lunch" value="it is after lunch"/>
+            <rg:sequence id="draw">
+                <rg:create-response id="return-draw-result" value="a draw"/>
+            </rg:sequence>
+            <rg:sequence id="player-win">
+                <rg:create-response id="return-player-win-result" value="player wins"/>
+            </rg:sequence>
+            <rg:sequence id="computer-wins">
+                <rg:create-response id="set-computer-wins-result" value="computer wins"/>
+            </rg:sequence>
         </rg:steps>
-        <rg:rules default-step="after-lunch">
-            <rg:rule step="before-lunch">
-                <rg:condition source="greeting" contains="morning"/>
+        <rg:rules default-step="computer-wins">
+            <rg:rule id="is-draw" step="draw">
+                <rg:condition id="player-got-same-as-computer" source="player-choice" equals-param="computer-choice"/>
+            </rg:rule>
+            <rg:rule id="rock-beats-paper" step="player-win">
+                <rg:condition id="player-rock" source="player-choice" equals="rock"/>
+                <rg:condition id="comp-scissors" source="computer-choice" equals="scissors"/>
+            </rg:rule>
+            <rg:rule id="paper-beats-rock" step="player-win">
+                <rg:condition id="player-paper" source="player-choice" equals="paper"/>
+                <rg:condition id="comp-rock" source="computer-choice" equals="rock"/>
+            </rg:rule>
+            <rg:rule id="scissors-beats-paper" step="player-win">
+                <rg:condition id="player-scissors" source="player-choice" equals="scissors"/>
+                <rg:condition id="comp-paper" source="computer-choice" equals="paper"/>
             </rg:rule>
         </rg:rules>
     </rg:decision>
 </rg:regurgitator-configuration>
 ```
 
-### example json configuration
-
-below is an example json configuration file for regurgitator:
-
-```json
-{
-    "kind": "decision",
-    "id": "check-greeting",
-    "steps": [
-        {
-            "kind": "create-response",
-            "id": "before-lunch",
-            "value": "it is before lunch"
-        },
-        {
-            "kind": "create-response",
-            "id": "after-lunch",
-            "value": "it is after lunch"
-        }
-    ],
-    "default-step": "after-lunch",
-    "rules": [
-        {
-            "step": "before-lunch",
-            "conditions": [
-                {
-                    "source": "greeting",
-                    "contains": "morning"
-                }
-            ]
-        }
-    ]
-}
-```
-
-### example yml configuration
-
-below is an example yml configuration file for regurgitator:
-
-```yml
-decision:
- id: check-greeting
- steps:
- - create-response:
-    id: before-lunch
-    value: it is before lunch
- - create-response:
-    id: after-lunch
-    value: it is after lunch
- default-step: after-lunch
- rules:
- - step: before-lunch
-   conditions:
-   - source: greeting
-     contains: morning
-```
-
-### example code
+### example java code
 
 below is example code for loading a configuration file, creating a regurgitator instance, and processing a message:
 
 ```java
 import uk.emarte.regurgitator.core.*;
 
-public class MyClass {
+public class MyRegurgitatorExample {
     public static void main(String[] args) throws RegurgitatorException {
-        Step rootStep = ConfigurationFile.loadFile("classpath:/my_configuration.xml");
+        Step rootStep = ConfigurationFile.loadFile("classpath:/rock-paper-scissors.xml");
         Regurgitator regurgitator = new Regurgitator("my-regurgitator", rootStep);
 
-        ResponseCallBack callBack = (message,response)-> System.out.println(response);
+        ResponseCallBack callBack = (message,response) -> System.out.println("The result was " + response);
 
         Message message = new Message(callBack);
-        message.getParameters().setValue("greeting", "good afternoon");
+        message.getParameters().setValue("player-choice", "paper");
+        message.getParameters().setValue("computer-choice", "rock");
 
         regurgitator.processMessage(message);
     }
 }
 ```
 
-the response, for this noddy example, would be "it is after lunch", output to the console.
+the output for this example would be ```"The result was player wins"```.
 
-(the above example shows programmatic use of [regurgitator-core](https://talmeym.github.io/regurgitator-core#regurgitator-core). to see how regurgitator can help you over http or mq, with or without writing code, see [web](https://talmeym.github.io/regurgitator-extensions-web#regurgitator-extensions-web) or [mq](https://talmeym.github.io/regurgitator-extensions-mq#regurgitator-extensions-mq) or follow links below to some reference projects)
+(the above shows programmatic use of [regurgitator-core](https://talmeym.github.io/regurgitator-core#regurgitator-core). to see how regurgitator can help you over http or mq, with or without writing code, see [web](https://talmeym.github.io/regurgitator-extensions-web#regurgitator-extensions-web) or [mq](https://talmeym.github.io/regurgitator-extensions-mq#regurgitator-extensions-mq) or follow links below to some reference projects)
 
 ## reference projects
 
 reference projects for using regurgitator (over http) can be found below: 
-- [rock-paper-scissors](https://github.com/talmeym/rock-paper-scissors){:target="_blank"}  - mocks a service allowing you to play a famous game
+- [rock-paper-scissors](https://github.com/talmeym/rock-paper-scissors){:target="_blank"}  - mocks a service allowing you to play rock paper scissors over http
 - [primeable-mock-server](https://github.com/talmeym/primeable-mock-server){:target="_blank"}  - a mock server you can prime for any http call
