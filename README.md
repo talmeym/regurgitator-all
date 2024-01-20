@@ -66,15 +66,9 @@ below is an example xml configuration file for regurgitator:
 <rg:regurgitator-configuration xmlns:rg="http://core.regurgitator.emarte.uk" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://core.regurgitator.emarte.uk regurgitatorCore.xsd" id="rock-paper-scissors">
     <rg:decision id="determine-result">
         <rg:steps>
-            <rg:sequence id="draw">
-                <rg:create-response id="return-draw-result" value="a draw"/>
-            </rg:sequence>
-            <rg:sequence id="player-win">
-                <rg:create-response id="return-player-win-result" value="player wins"/>
-            </rg:sequence>
-            <rg:sequence id="computer-wins">
-                <rg:create-response id="set-computer-wins-result" value="computer wins"/>
-            </rg:sequence>
+            <rg:create-response id="draw" value="a draw"/>
+            <rg:create-response id="player-win" value="player wins"/>
+            <rg:create-response id="computer-wins" value="computer wins"/>
         </rg:steps>
         <rg:rules default-step="computer-wins">
             <rg:rule id="is-draw" step="draw">
