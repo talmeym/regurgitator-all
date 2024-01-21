@@ -80,6 +80,10 @@
                                 </goals>
                             </execution>
                         </executions>
+                        <configuration>
+                            <show>public</show>
+                            <bottom>Copyright (C) 2017 Miles Talmey. Software distributed under the MIT License.</bottom>
+                        </configuration>
                     </plugin>
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
