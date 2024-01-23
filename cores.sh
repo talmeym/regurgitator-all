@@ -1,0 +1,2 @@
+#!/bin/sh
+cd ../regurgitator-core && pwd && $1 && cd ../regurgitator-core-config && pwd && $1 && cd ../regurgitator-core-xml && pwd && $1 && cd ../regurgitator-core-json && pwd && $1 && cd ../regurgitator-core-yml && pwd && $1 && echo "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%" && echo "%%%%%%%%%%% SUCCESS SUCCESS SUCCESS %%%%%%%%%%%" && echo "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
