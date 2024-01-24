@@ -120,7 +120,7 @@ by running the code snippet above (with the configuration above), this regurgita
 
 ### take it to the next level
 
-the above shows programmatic use of [regurgitator-core](https://talmeym.github.io/regurgitator-core#regurgitator-core). to see how regurgitator can operate over http or jms, with or without writing code, see [web](https://talmeym.github.io/regurgitator-extensions-web#regurgitator-extensions-web) or [mq](https://talmeym.github.io/regurgitator-extensions-mq#regurgitator-extensions-mq) or follow links below to some reference projects
+the above shows programmatic use of [regurgitator-core](https://talmeym.github.io/regurgitator-core#regurgitator-core). now see how regurgitator can do more by operating over ``http`` or ``jms``, with or without writing code - see [web](https://talmeym.github.io/regurgitator-extensions-web#regurgitator-extensions-web) or [mq](https://talmeym.github.io/regurgitator-extensions-mq#regurgitator-extensions-mq) or follow links below to some reference projects
 
 ## reference projects
 
