@@ -91,6 +91,8 @@ below is an example xml configuration file for regurgitator:
 </rg:regurgitator-configuration>
 ```
 
+as is hopefully apparent, the above example implements the rules of the well-known game rock-paper-scissors
+
 ### example java code
 
 below is example code for loading a configuration file, creating a regurgitator instance, and processing a message:
@@ -103,7 +105,7 @@ public class MyRegurgitatorExample {
         Step rootStep = ConfigurationFile.loadFile("classpath:/rock-paper-scissors.xml");
         Regurgitator regurgitator = new Regurgitator("my-regurgitator", rootStep);
 
-        ResponseCallBack callBack = (message,response) -> System.out.println("The result was " + response);
+        ResponseCallBack callBack = (message,response) -> System.out.println(response);
 
         Message message = new Message(callBack);
         message.getParameters().setValue("player-choice", "paper");
@@ -114,9 +116,11 @@ public class MyRegurgitatorExample {
 }
 ```
 
-the output from this example would be ```"The result was player wins"```.
+by running the code snippet above (with the configuration above), this regurgitator example allows the execution of a game of rock-paper-scissors, with the output ```"player wins"```
 
-(the above shows programmatic use of [regurgitator-core](https://talmeym.github.io/regurgitator-core#regurgitator-core). to see how regurgitator can operate over http or jms, with or without writing code, see [web](https://talmeym.github.io/regurgitator-extensions-web#regurgitator-extensions-web) or [mq](https://talmeym.github.io/regurgitator-extensions-mq#regurgitator-extensions-mq) or follow links below to some reference projects)
+### take it to the next level
+
+the above shows programmatic use of [regurgitator-core](https://talmeym.github.io/regurgitator-core#regurgitator-core). to see how regurgitator can operate over http or jms, with or without writing code, see [web](https://talmeym.github.io/regurgitator-extensions-web#regurgitator-extensions-web) or [mq](https://talmeym.github.io/regurgitator-extensions-mq#regurgitator-extensions-mq) or follow links below to some reference projects
 
 ## reference projects
 
