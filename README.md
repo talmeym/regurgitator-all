@@ -91,7 +91,7 @@ below is an example xml configuration file for regurgitator:
 </rg:regurgitator-configuration>
 ```
 
-as is hopefully apparent, the above example implements the rules of the well-known game rock-paper-scissors
+as is hopefully apparent, the above example implements the rules of the well-known game - rock-paper-scissors
 
 ### example java code
 
