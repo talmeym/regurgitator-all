@@ -57,6 +57,8 @@ below is an example pom.xml for a maven project that includes regurgitator:
 </project>
 ```
 
+find out import details for other build frameworks here : [mvnrepository](https://mvnrepository.com/artifact/uk.emarte.regurgitator/regurgitator-all){:target="_blank"}
+
 ### example xml configuration
 
 below is an example xml configuration file for regurgitator:
