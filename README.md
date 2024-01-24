@@ -116,7 +116,7 @@ public class MyRegurgitatorExample {
 }
 ```
 
-by running the code snippet above (with the configuration above), this regurgitator example allows the execution of a game of rock-paper-scissors, with the output ```"player wins"```
+by running the code snippet above (with the configuration above), this regurgitator example allows the execution of a game of rock-paper-scissors, with the outcome being - ```"player wins"```
 
 ### take it to the next level
 
