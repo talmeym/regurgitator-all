@@ -51,7 +51,7 @@ below is an example pom.xml for a maven project that includes regurgitator:
         <dependency>
             <groupId>uk.emarte.regurgitator</groupId>
             <artifactId>regurgitator-all</artifactId>
-            <version>0.1.1</version>
+            <version>0.1.2</version>
         </dependency>
     </dependencies>
 </project>
