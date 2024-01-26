@@ -50,8 +50,8 @@ below is an example pom.xml for a maven project that includes regurgitator:
     <dependencies>
         <dependency>
             <groupId>uk.emarte.regurgitator</groupId>
-            <artifactId>regurgitator-all</artifactId>
-            <version>0.1.2</version>
+            <artifactId>regurgitator-core</artifactId>
+            <version>0.1.3</version>
         </dependency>
     </dependencies>
 </project>
