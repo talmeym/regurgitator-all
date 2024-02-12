@@ -14,6 +14,8 @@ it is separated out into modules, so you only have to include the parts you need
 
 click on the highlighted [``terms``](https://talmeym.github.io/regurgitator-all#regurgitator) above to learn more, or see the reference projects [here](https://talmeym.github.io/regurgitator-all#reference-projects).
 
+**NEW** you can now generate regurgitator configuration from an open api / swagger file. see [here](https://talmeym.github.io/regurgitator-extensions-swagger)
+
 ## module structure
 
 the main modules are as follows:
@@ -93,7 +95,7 @@ below is an example xml configuration file for regurgitator:
 </rg:regurgitator-configuration>
 ```
 
-as is hopefully apparent, the above example implements the rules of the well-known game - rock-paper-scissors
+the above example implements the rules of the well-known game - rock-paper-scissors
 
 ### example java code
 
@@ -118,7 +120,7 @@ public class MyRegurgitatorExample {
 }
 ```
 
-by running the code snippet above (with the configuration above), this regurgitator example allows the execution of a game of rock-paper-scissors, with the outcome being - ```"player wins"```
+by running the above (with the configuration above), this example executes a game of rock-paper-scissors, with the outcome being - ```"player wins"```
 
 ### take it to the next level
 
