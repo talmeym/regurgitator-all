@@ -6,7 +6,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>uk.emarte.regurgitator</groupId>
     <artifactId>regurgitator-all</artifactId>
-    <version>0.1.3</version>
+    <version>0.1.4</version>
     <packaging>jar</packaging>
     <name>Regurgitator All</name>
 
@@ -145,7 +145,7 @@
         <dependency>
             <groupId>uk.emarte.regurgitator</groupId>
             <artifactId>regurgitator-extensions-jetty</artifactId>
-            <version>[0.1.2,0.2.0)</version>
+            <version>[0.1.4,0.2.0)</version>
         </dependency>
         <dependency>
             <groupId>uk.emarte.regurgitator</groupId>
@@ -161,6 +161,11 @@
             <groupId>uk.emarte.regurgitator</groupId>
             <artifactId>regurgitator-extensions-mq-yml</artifactId>
             <version>[0.1.3,0.2.0)</version>
+        </dependency>
+        <dependency>
+            <groupId>uk.emarte.regurgitator</groupId>
+            <artifactId>regurgitator-extensions-swagger</artifactId>
+            <version>[0.1.5,0.2.0]</version>
         </dependency>
     </dependencies>
 </project>
