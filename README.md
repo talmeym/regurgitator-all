@@ -132,4 +132,4 @@ reference projects for using regurgitator (over http) can be found below:
 - [rock-paper-scissors](https://github.com/talmeym/rock-paper-scissors){:target="_blank"}  - mocks a service allowing you to play the famous game
 - [primeable-mock-server](https://github.com/talmeym/primeable-mock-server){:target="_blank"}  - a mock server you can prime for any http call
 
-[``apidocs``](https://regurgitator.emarte.uk/apidocs/regurgitator-all/0.1.2/) 
+[``apidocs``](https://regurgitator.emarte.uk/apidocs/regurgitator-all/0.1.4/){:target="_blank"}
